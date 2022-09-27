@@ -77,10 +77,17 @@
         </div>
       </fieldset>
       <fieldset class="usa-fieldset">
-        <legend class="usa-sr-only">Load USWDS</legend>
+        <legend class="usa-sr-only">Load USWDS CSS</legend>
         <div class="usa-checkbox">
           <%= f.check_box :load_css, class: "usa-checkbox__input" %>
           <%= f.label :load_css, "Load USWDS CSS - note: use if your site does not implement USWDS styling.", class: "usa-checkbox__label" %>
+        </div>
+      </fieldset>
+      <fieldset class="usa-fieldset">
+        <legend class="usa-sr-only">Load USWDS Javascript</legend>
+        <div class="usa-checkbox">
+          <%= f.check_box :load_uswds_js, class: "usa-checkbox__input" %>
+          <%= f.label :load_uswds_js, "Load USWDS .js - note: use if your site does not implement USWDS javascript.", class: "usa-checkbox__label" %>
         </div>
       </fieldset>
     </div>

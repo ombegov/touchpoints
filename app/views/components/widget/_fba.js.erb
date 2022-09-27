@@ -1,7 +1,7 @@
 // Form components are namespaced under 'fba' = 'Feedback Analytics'
 'use strict';
 
-<% unless form.delivery_method == 'touchpoints-hosted-only' %>
+<% unless form.delivery_method == 'touchpoints-hosted-only' || form.load_uswds_js == false %>
 <%= raw File.open("#{Rails.root}/app/assets/javascripts/uswds-modal-include.js").read %>
 <% end %>
 
